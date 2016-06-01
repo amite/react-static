@@ -7,12 +7,13 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE.txt file in the root directory of this source tree.
  */
-
+require('babel-polyfill');
 const GitRepo = require('git-repository');
 const task = require('./task');
 
 const remote = {
   name: 'github',
+  // https://github.com/{user}/{repo}.git'
   url: 'https://github.com/amite/react-static.git',
   branch: 'gh-pages',
 };
